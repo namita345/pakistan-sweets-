@@ -27,7 +27,7 @@ const NAV = [
 function Logo() {
   return (
     <Link to="/" className="flex min-w-0 items-center">
-      <img src="/logo.png" alt="Pakistan Sweets & Bakers — Doha, Qatar" className="h-12 w-auto object-contain sm:h-14" />
+      <img src="/logo.png" alt="Pakistan Sweets & Bakers — Doha, Qatar" className="h-14 w-auto object-contain sm:h-16" />
     </Link>
   );
 }
@@ -161,7 +161,7 @@ export default function Navbar() {
             </button>
             <Link
               to="/shop"
-              className="hidden items-center gap-2 rounded-full bg-burgundy px-5 py-2.5 text-xs font-bold uppercase tracking-[0.18em] text-gold-pale shadow-lg shadow-burgundy/25 transition-all hover:bg-maroon hover:shadow-maroon/30 sm:inline-flex"
+             className="hidden items-center gap-2 rounded-full bg-gold px-5 py-2.5 text-xs font-bold uppercase tracking-[0.18em] text-maroon shadow-lg shadow-gold/25 transition-all hover:bg-gold-light hover:shadow-gold/30 sm:inline-flex"
             >
               Order Now
             </Link>
