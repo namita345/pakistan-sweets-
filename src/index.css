@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon: #641C2A;
+  --color-maroon-deep: #4A2C22;
+  --color-burgundy: #7A2635;
+  --color-burgundy-light: #8F3A49;
+  --color-gold: #C9A24A;
+  --color-gold-light: #D9BC79;
+  --color-gold-pale: #F0E3C5;
+  --color-brown: #4A2C22;
+  --color-beige: #F4E8D2;
+  --color-cream: #FBF6EC;
+  --color-cream-dark: #F4E8D2;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Jost", "Segoe UI", sans-serif;
+  --font-arabic: "Amiri", "Noto Naskh Arabic", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-brown);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Jaali lattice pattern — dark sections */
+.jaali {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 2L54 28L28 54L2 28Z' fill='none' stroke='%23C9A24A' stroke-opacity='0.13'/%3E%3Ccircle cx='28' cy='28' r='2.5' fill='%23C9A24A' fill-opacity='0.12'/%3E%3C/svg%3E");
+}
+
+/* Jaali lattice pattern — light sections */
+.jaali-light {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 2L54 28L28 54L2 28Z' fill='none' stroke='%23641C2A' stroke-opacity='0.06'/%3E%3Ccircle cx='28' cy='28' r='2.5' fill='%23C9A24A' fill-opacity='0.14'/%3E%3C/svg%3E");
+}
+
+/* thin gold scrollbar for horizontal strips */
+.gold-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.gold-scroll::-webkit-scrollbar-track {
+  background: rgba(192, 154, 79, 0.12);
+  border-radius: 99px;
+}
+.gold-scroll::-webkit-scrollbar-thumb {
+  background: rgba(192, 154, 79, 0.55);
+  border-radius: 99px;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-maroon-deep);
+}
